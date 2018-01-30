@@ -24,7 +24,6 @@
 
 
     <div id="flip-container">
-      <div id="flip-card">
 
  <div id="signin" class="face">
   
@@ -41,7 +40,16 @@
                  <input type="password" class="form-control" id="password" placeholder="Password">
                <a href="#" id="toRecover">Forgot your password?</a>
                </div>
-               
+
+               <!-- This is the section where errors will display to the user -->
+               <div id="error-signin" class="alert alert-warning alert-dismissible fade show" role="alert"> 
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">&times;</span>  
+</button>
+<strong>Sorry</strong>, this email/password does not match. Please try again.         
+</div>
+               <!-- end of error message -->
+
                <div class="d-flex justify-content-around">
                  <button type="submit" class="btn btn-primary length" id="join">Join</button>
                  <button type="submit" class="btn btn-primary length" id="login">Login</button>
@@ -51,40 +59,7 @@
            </div>
            <!-- end face -->
 
-         <div class="back face">
-            <div id="signup" class="hide">
-                <form class="form-signin" role="form">
-                        <h2 class="signupHeader">Please Sign Up</h2>
-                        <div class="form-group">
-                          <input type="text" class="form-control" name="loginUsername" id="loginUsername" placeholder="Username" required autofocus>
-                          <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Email address" required>
-                          <input type="password" class="form-control" name="loginPass" id="loginPass" placeholder="Password" required>
-                          <div class="d-flex justify-content-around">
-                              <button class="btn btn-primary length" id="jcancel">Cancel</button>  
-                              <button class="btn btn-primary longer" type="submit" id="toSignup">Sign Up</button>
-                            
-                            </div></div>
-                </form>
-                       </div>
-                       <!-- end signup -->
-                <div id="recover" class="hide">
-                <form class="form-signin" role="form">
-                <h3 class="recoverHeader">Reset your password</h3>
-                <div class="form-group">
-                <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Email address"required autofocus>
-                <div class="d-flex justify-content-around">
-                <button class="btn btn-primary length" id="cancelit">Cancel</button>
-                <button class="btn btn-primary longer" type="submit">Recover</button>
-                </div></div>
-                </form>
-                </div>
-                <!-- end recover -->
-
-         </div>
-  <!-- end back face -->
-
-           </div>
-          <!-- end flip-card -->
+        
 
        </div>
        <!-- end #flip-container -->

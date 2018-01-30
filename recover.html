@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Login Page</title>
+      
+      
+      <link rel="stylesheet" type="text/css" href="l-styles.css"/>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" >
+   
+      
+    </head>
+    
+    <body>
+        
+ <div class="container-fluid">
+<div class="d-flex justify-content-stretch cover"><img id=overlay class="img-fluid" src="background.jpg"></div>
+
+<div class="container">
+<div class="row">
+
+
+    <div id="flip-container">
+
+        <div id="recover" class="face">
+            <form class="form-signin" role="form">
+            <h3 class="recoverHeader">Reset your password</h3>
+            <div class="form-group">
+            <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Email address"required autofocus>
+            <div class="b d-flex justify-content-around">
+            <button class="btn btn-primary length" id="cancelit">Cancel</button>
+            <button class="btn btn-primary longer" type="submit">Recover</button>
+            </div></div>
+            </form>
+            </div>
+
+           <!-- end face -->
+
+  <!-- This is the section where errors will display to the user -->
+  <div id="error-recover" class="alert alert-warning alert-dismissible fade show" role="alert"> 
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>  
+    </button>
+    <strong>Sorry</strong>, this email does not exist. Is it spelled correctly?         
+    </div>
+                   <!-- end of error message -->
+
+
+       </div>
+       <!-- end #flip-container -->
+
+</div>
+<!-- end row -->
+
+</div>
+<!-- end container -->
+
+ </div>
+<!-- containerfluid end -->
+    </body>
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js" ></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js" ></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+  <script src="flip.js"></script>
+    </html>
+  

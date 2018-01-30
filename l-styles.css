@@ -1,16 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px|Varela+Round');
 
-.neat{
-    visibility:hidden;
-}
 .cover{position:absolute;
     width:100%;
     height:100%;
 }
 #overlay {
-    /* position:absolute; */
-    /* top:0;left:0;right:0;bottom:0; */
+   
     object-fit:cover;
 opacity:0.38;
 }
@@ -30,63 +26,17 @@ font-family:"Varela Round" !important;
     margin:12vh auto;
     width:320px;
     height:490px;
-   z-index:1;
-   perspective:800px;
-}
-#flip-card{
-    width:100%;
-    height:100%;
-    transform-style:preserve-3d;
-    transition: all 0.5s linear;    
-}
-#flip-container.flipped #flip-card{
-    transform:rotateY(180deg);
-
+ 
 }
 .face{
     position:absolute;
     width: 100%;
     height:100%;
-    backface-visibility: hidden;
     background:linear-gradient(to top,rgba(245,245,245,.5) 0%, rgba(245,245,245,.5) 10%, rgba(38, 136, 235, 0.3) 50%, rgba(245,245,245,.4) 95%, rgba(245,245,245,.2) 100%),#B1D7ED;
     color:#666;
     padding:20px;
     border-radius:10px;
     border:5px solid #fff;
-}
-.back{
-    background-color:#B1D7ED;
-    color:#666;
-    padding:20px;
-    border-radius:10px;
-    border:5px solid #fff;
-    position:relative;
-}
-.back input{
-    margin:10px 0;
-}
-.face.back{
-    display:block;
-    transform:rotateY(180deg);
-    box-sizing:border-box;
-}
-#signup{
-    position:relative;
-    top:50px;
-}
-#signup input{
-    padding:10px !important;
-}
-#recover{
-    position:relative;
-    top:-115px;
-}
-.length{
-    width:85px;
-    letter-spacing: .12rem;
-}
-.longer{
-    width:90px;
 }
 .rounded{
     background-color: white;
@@ -98,7 +48,7 @@ font-family:"Varela Round" !important;
 }
 .full-f{
     width:50%;
-    padding:10px 5px;
+    padding:5px;
     margin:auto;
 }
 .logo{
@@ -109,8 +59,30 @@ font-family:"Varela Round" !important;
     height:auto;
 }
 #password{
-    margin-bottom:5px;
+    margin-bottom:3px;
 }
+#signup input{
+    padding:10px !important;
+    margin:10px auto;
+}
+#recover input{
+    padding:10px !important;
+    margin:10px auto;
+}
+.form-group{
+    margin-bottom:.5rem !important;
+    }
+    input{
+        padding:5px;
+    }
+.length{
+    width:85px;
+    letter-spacing: .5px;
+}
+.longer{
+    width:90px;
+}
+
 form a{
     font-size: .8rem;
 }
@@ -120,7 +92,37 @@ form a{
 }
 .recoverHeader{
     font-size:1.5rem !important;
+    text-align: center;
 }
-.form-group{
-margin-bottom:.7rem !important;
+.signupHeader{
+    text-align: center;
 }
+#recover .form-signin{
+    position:relative;
+    top:75px;
+}
+.b{
+position:relative;
+top:6px;}
+
+    #signup .form-signin{
+        position:relative;
+        top:75px;
+    }
+    #error-signin{
+        position:absolute;
+        top:280px;
+left:0
+    }
+    #error-recover{
+        position:absolute;
+        top:120px;
+left:0
+    }
+    #error-signup{
+        position:absolute;
+        top:180px;
+left:0;
+padding-top:15px;
+padding-bottom: 15px;
+    }
