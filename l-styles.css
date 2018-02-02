@@ -83,7 +83,7 @@ font-family:"Varela Round" !important;
     width:90px;
 }
 
-form a{
+#flip-container form a{
     font-size: .8rem;
 }
 .form-signin>.container-fluid{
@@ -126,3 +126,7 @@ left:0;
 padding-top:15px;
 padding-bottom: 15px;
     }
+
+    /* PAGE TEMPLATE STYLES */
+
+    
