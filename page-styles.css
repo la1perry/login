@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px|Varela+Round');
+
+    .partition_1{
+        background-color: #ff6543;
+        height: 10px;
+        width: 94%;
+        margin: 0px auto;
+      }
+      nav {
+          font-family:"Slabo 27px";
+          font-size:36px;
+          letter-spacing: .5px;
+          /* height:100px; */
+      }
+      nav a{
+          color:black;
+      }
+      header ul {
+          width:100%
+      }
