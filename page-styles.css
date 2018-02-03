@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px|Varela+Round');
-
+h5, .card a{
+    font-family:"Varela Round" !important;
+}
     .partition_1{
         background-color: #ff6543;
         height: 10px;
@@ -16,9 +18,7 @@
       nav a{
           color:black;
       }
-      header {
-
-      }
+  
       header ul {
           width:100%;
       }
@@ -45,7 +45,7 @@ nav li {
 }
 .card-body{
     background-color: white;
-    margin:10px 0;
+    margin:15px 0;
     padding:0 !important;
     border-radius:10px;
 }
@@ -64,11 +64,38 @@ nav li {
 footer {
     background-color:#383839;
     height:75px;
-   
+    position:relative;
+   overflow: hidden;
+}
+footer a{
+    color:white;
 }
 
 
+#gear{
+   object-fit:cover;
+padding:10px;
+}
+#options{
+transition:transform 3s;
 
+}
+#options li{
+    transition:opacity 2.5s;
+}
+
+#settings{
+    background-color:#383839;
+}
+.in{
+   transform:translateX(400px);
+    transition:transform 3s;
+  
+}
+.fade{
+opacity:0;
+transition:opacity 1s;
+}
 
 
       @media screen and (max-width:800px){
