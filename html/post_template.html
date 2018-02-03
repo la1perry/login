@@ -4,12 +4,12 @@
       <title>Login Page</title>
       
       
-      <link rel="stylesheet" type="text/css" href="page-styles.css"/>
+      <link rel="stylesheet" type="text/css" href="../css/page-styles.css"/>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
       <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" >
+      <link rel="stylesheet" href=".././node_modules/bootstrap/dist/css/bootstrap.min.css" >
    
       
     </head>
@@ -19,7 +19,7 @@
             <ul class="nav nav-tabs d-flex justify-content-around" id="navTab" role="tablist">
            <li class="nav-item col-md-2 col-sm-12 d-flex flex-column justify-content-center"><a class "nav-link active" id="work-tab"  href="page_template.html" role="tab" aria-controls="work">Work</a></li>
            <li class="nav-item col-md-2 col-sm-12 d-flex flex-column justify-content-center"><a class "nav-link" id="school-tab"  href="page_template.html" role="tab" aria-controls="school" >School</a></li>
-           <li id="cut" class="nav-item"><img id="pic"src="small.png"></li>
+           <li id="cut" class="nav-item"><a href="page_template.html"><img id="pic"src="../imgs/small.png"></a></li>
            <li class="nav-item col-md-2 col-sm-12 d-flex flex-column justify-content-center"><a class "nav-link" id="social-tab"  href="page_template.html" role="tab" aria-controls="social">Social</a></li>
            <li class="nav-item col-md-2 col-sm-12 d-flex flex-column justify-content-center"><a class "nav-link" id="health-tab"  href="page_template.html" role="tab" aria-controls="health">Health</a></li>
            
@@ -38,7 +38,7 @@
     <div class="post-body card col-10">
             <div class="card-body">
                     <h5>Title</h5>
-                    <p>Full text of post. Complete content goes here.</p>
+                    <p>Full text of a post. Complete content goes here.</p>
                     <div class="card-footer" data-toggle="modal" data-target="#reply_post">
                         <a href="#"> Reply</a>
                     </div>
@@ -48,7 +48,7 @@
 
         
         
-        <!-- NEW POST MODAL -->
+        <!-- Reply MODAL -->
         
         <div class="modal fade" id="reply_post" tabindex="-1" role="dialog" aria-labelledby="post-reply" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -74,11 +74,14 @@
           </div>
         </div>
         </div>
-        <!-- END new post modal -->
+        <!-- END reply modal -->
 
 
 <div id="seperator"> <h2 class="col">Replies</h2> <div class="partition_2"></div></div>
  
+<!--Reply container  -->
+<div id="post-replies container-fluid">
+
 <!-- replies -->
 <div class="reply post-body card col-10">
         <div class="card-body">
@@ -89,6 +92,7 @@
                 </div>
               </div>
 </div>
+
 <div class="reply post-body card col-10">
         <div class="card-body">
             
@@ -98,7 +102,10 @@
                     </div>
               </div>
 </div>
+
 <!-- end replies -->
+ </div>
+<!-- end reply container -->
 
 </div>
 <!-- end message -->
@@ -116,16 +123,16 @@
       <li class="nav-item col d-flex align-items-center"><a href="#">Logout</a></li>
     </ul>
     <ul class="nav d-flex flex-row">
-      <li id="settings" class="nav-item col" data-toggle="toggle" data-target="#options"><img id="gear" src="gear.png"></li></ul>
+      <li id="settings" class="nav-item col" data-toggle="toggle" data-target="#options"><img id="gear" src="../img/gear.png"></li></ul>
   </nav>
 </footer>
 
     </body>
-    <script src="./node_modules/jquery/dist/jquery.slim.min.js" ></script>
+    <script src=".././node_modules/jquery/dist/jquery.slim.min.js" ></script>
     <!-- <script src="./node_modules/jquery/dist/jquery.js" ></script> -->
     
-    <script src="./node_modules/popper.js/dist/popper.min.js" ></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
-  <script src="app.js"></script>
+    <script src=".././node_modules/popper.js/dist/popper.min.js" ></script>
+    <script src=".././node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+  <script src="../js/app.js"></script>
     </html>
   

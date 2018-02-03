@@ -4,22 +4,22 @@
       <title>Login Page</title>
       
       
-      <link rel="stylesheet" type="text/css" href="page-styles.css"/>
+      <link rel="stylesheet" type="text/css" href="../css/page-styles.css"/>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
       <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" >
+      <link rel="stylesheet" href=".././node_modules/bootstrap/dist/css/bootstrap.min.css" >
    
       
     </head>
     
         <header>
           <nav class="container d-flex flex-row justify-content-center">
-            <ul class="nav nav-tabs d-flex justify-content-around" id="navTab" role="tablist">
-           <li class="nav-item col-md-2 col-sm-12 d-flex flex-column justify-content-center"><a class "nav-link active" id="work-tab" data-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="true">Work</a></li>
+            <ul class="nav nav-tabs d-flex row justify-content-around" id="navTab" role="tablist">
+           <li class="nav-item col-md-2 col-sm-12 d-flex flex-column justify-content-center"><a class "nav-link" id="work-tab" data-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false">Work</a></li>
            <li class="nav-item col-md-2 col-sm-12 d-flex flex-column justify-content-center"><a class "nav-link" id="school-tab" data-toggle="tab" href="#school" role="tab" aria-controls="school" aria-selected="false">School</a></li>
-           <li id="cut" class="nav-item"><img id="pic"src="small.png"></li>
+           <li id="cut" class="nav-item "><a class="nav-link active" id="landing_page" data-toggle="tab" href="#landing" role="tab" aria-control="landing" aria-selected="true"><img id="pic"src="../imgs/small.png"></a></li>
            <li class="nav-item col-md-2 col-sm-12 d-flex flex-column justify-content-center"><a class "nav-link" id="social-tab" data-toggle="tab" href="#social" role="tab" aria-controls="social" aria-selected="false">Social</a></li>
            <li class="nav-item col-md-2 col-sm-12 d-flex flex-column justify-content-center"><a class "nav-link" id="health-tab" data-toggle="tab" href="#health" role="tab" aria-controls="health" aria-selected="false">Health</a></li>
            
@@ -37,13 +37,67 @@
 
 <div class="tab-content col-12">
 
-<div class="tab-pane active" id="work" role="tab-panel" aria-label="work-tab">
+  <!-- Landing Page -->
+  <div class="tab-pane active" id="landing" role="tab-panel" aria-label="landing-tab">
+      
+    <div class="welcome_note">
+
+            <div class="welcome_banner d-flex flex-column justify-content-start">
+                <div class="text_1 col-10 ">
+                    Welcome to <span>Lyft</span>
+                  </div>
+                  <div class="text_2 col-12">
+                    Langara's&nbsp;<span>Peer Counselling</span>&nbsp;App
+                  </div>
+            </div>
+
+
+            
+<img id="banner" src="../imgs/banner.png">
+            <div id="instructions" class="d-flex flex-row">
+
+                <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <div class="card-body">
+                      <h5>Write</h5>
+                      <img id="doc" src="../imgs/doc.png">
+                      <p>Life can get stressful. Share your story and get feedback from students who have been there.</p>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="card col-lg-4 col-md-6 col-sm-12">
+                      <div class="card-body">
+                        <h5>Respond</h5>
+                        <img src="../imgs/respond.png">
+                        <p>By starting a conversations students can help each other overcome problems they are facing.</p>
+                        
+                      </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <div class="card-body">
+                          <h5>Relate</h5>
+                          <img src="../imgs/relate.png">
+                          <p>We can all learn from one another by drawing on shared experience.</p>
+                          
+                        </div>
+                      </div>
+            </div>
+<!-- end instructions -->
+
+       </div>
+<!-- end welcome_note -->
+
+  </div>
+
+<!-- End Landng page tab-->
+
+<div class="tab-pane" id="work" role="tab-panel" aria-label="work-tab">
 
   <div class="container-fluid d-flex flex-column flex-md-row flex-wrap">
   
     <!-- CARD first one empty, click to add post -->
   <div class="card col-lg-4 col-md-6 col-sm-12" data-toggle="modal" data-target="#newpost_work">
-<img id="plus" src="plus.png">
+<img id="plus" src="../imgs/plus.png">
 </div>
 <!-- end card -->
 
@@ -142,7 +196,7 @@
         
       <!-- CARD first one empty, click to add post -->
   <div class="card col-lg-4 col-md-6 col-sm-12" data-toggle="modal" data-target="#newpost_school">
-      <img id="plus" src="plus.png">
+      <img id="plus" src="../imgs/plus.png">
       </div>
       <!-- end card -->
       
@@ -242,7 +296,7 @@
         
          <!-- CARD first one empty, click to add post -->
   <div class="card col-lg-4 col-md-6 col-sm-12" data-toggle="modal" data-target="#newpost_social">
-      <img id="plus" src="plus.png">
+      <img id="plus" src="../imgs/plus.png">
       </div>
       <!-- end card -->
       
@@ -337,7 +391,7 @@
         
            <!-- CARD first one empty, click to add post -->
   <div class="card col-lg-4 col-md-6 col-sm-12" data-toggle="modal" data-target="#newpost_health">
-      <img id="plus" src="plus.png">
+      <img id="plus" src="../imgs/plus.png">
       </div>
       <!-- end card -->
       
@@ -440,16 +494,16 @@
       <li class="nav-item col d-flex align-items-center"><a href="#">Logout</a></li>
     </ul>
     <ul class="nav d-flex flex-row">
-      <li id="settings" class="nav-item col" data-toggle="toggle" data-target="#options"><img id="gear" src="gear.png"></li></ul>
+      <li id="settings" class="nav-item col" data-toggle="toggle" data-target="#options"><img id="gear" src="../imgs/gear.png"></li></ul>
   </nav>
 </footer>
 
     </body>
-    <script src="./node_modules/jquery/dist/jquery.slim.min.js" ></script>
+    <script src=".././node_modules/jquery/dist/jquery.slim.min.js" ></script>
     <!-- <script src="./node_modules/jquery/dist/jquery.js" ></script> -->
     
-    <script src="./node_modules/popper.js/dist/popper.min.js" ></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
-  <script src="app.js"></script>
+    <script src=".././node_modules/popper.js/dist/popper.min.js" ></script>
+    <script src=".././node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+  <script src="../js/app.js"></script>
     </html>
   

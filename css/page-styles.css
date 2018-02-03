@@ -10,7 +10,7 @@ p, h5{
         height: 10px;
         width: 94%;
         margin: 0px auto;
-        margin-bottom:10px;
+        margin-bottom:5px;
       }
       nav {
           font-family:"Slabo 27px";
@@ -25,11 +25,13 @@ header ul {
 width:100%;
       }
 .tab-content{
-background-color: #b1aeae;
-padding:10px;
-border:10px solid white;
-max-height:75vh;
+padding:5px;
+border:5px solid white;
+height:100%;
 overflow:scroll;
+      }
+      .tab-pane{
+background-color:#b1aeae;
       }
 nav li {
     text-align: center;
@@ -102,13 +104,67 @@ header a:hover{
      color:black;
    
  }
-.card-footer a:hover, .card-footer h6{
-    color:white;
-    text-decoration: none;
+.card-footer a:hover, .card-footer h6, footer a{
+    color:white !important;
+    text-decoration: none !important;
    
 }
+#landing{
+    border:none !important;
+    width:100%;
+    height:100%;
+    background-color:white !important;
+}
+.welcome_note{
+    width: 100%;
+    background-color: white;
+    font-family: 'Varela Round', sans-serif;
+ /* height:75vh; */
+  }
+  .welcome_banner
+  {
+      width:100%;
+      background-color:#383839;
+      height:175px;
+    padding: 15px 50px;
+  }
+  .text_1 {
+    font-size: 30pt;
+    color: #ffffff;
+    max-height:75px;
+    text-align: left;
+  }
+  .text_2{
+    font-size: 25pt;
+    color: #ffffff;
+        max-height:75px;
+text-align: right;
+   
+  }
+  .text_1 span{
+    color: #ff6543;
+    font-size: 36pt;
+  }
+.text_2 span{
+    color: #ff6543;
+    font-size: 30pt;
+  }
+#banner {
+    width:100%;
+    margin:20px 0;
 
-
+}
+#instructions .card-body{
+text-align: center;
+}
+#instructions .card{
+background-color: white !important;
+border:none !important;
+}
+#doc{
+position:relative;
+left:8.5px;
+}
 
 
       @media screen and (max-width:800px){
@@ -122,7 +178,7 @@ header a:hover{
 
       }
 
-      /* POST TEMPLATE */
+      /* INDIVIDUAL POST TEMPLATE */
 
     
       #message{
