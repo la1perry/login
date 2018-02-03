@@ -5,6 +5,7 @@
         height: 10px;
         width: 94%;
         margin: 0px auto;
+        margin-bottom:20px;
       }
       nav {
           font-family:"Slabo 27px";
@@ -19,11 +20,38 @@
           width:100%
       }
       .tab-content{
-          background-color: #f8f8f8
+          background-color: #b1aeae;
+padding:10px;
+border:10px solid white;
       }
 nav li {
     text-align: center;
 }
+
+.card {
+    background-color: #b0d6ec !important;
+    border:5px solid #b1aeae !important;
+    border-radius:20px !important;
+    
+}
+.card-body{
+    background-color: white;
+    margin:10px 0;
+    padding:0 !important;
+    border-radius:20px;
+}
+.card-footer{
+    border-bottom-left-radius:20px !important;
+    border-bottom-right-radius:20px !important;
+    background-color:black !important;
+}
+.card h5, .card p {
+    padding:10px 15px;
+}
+.card-footer a{
+    color:white;
+}
+
 
       @media screen and (max-width:800px){
 #pic{
