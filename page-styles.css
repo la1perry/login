@@ -5,7 +5,7 @@
         height: 10px;
         width: 94%;
         margin: 0px auto;
-        margin-bottom:20px;
+        margin-bottom:10px;
       }
       nav {
           font-family:"Slabo 27px";
@@ -16,21 +16,30 @@
       nav a{
           color:black;
       }
+      header {
+
+      }
       header ul {
-          width:100%
+          width:100%;
       }
       .tab-content{
           background-color: #b1aeae;
 padding:10px;
 border:10px solid white;
+max-height:75vh;
+overflow:scroll;
       }
 nav li {
     text-align: center;
 }
-
+#plus{
+    object-fit:cover;
+    width:50%;
+    margin:auto;
+}
 .card {
     background-color: #b0d6ec !important;
-    border:5px solid #b1aeae !important;
+    border:8px solid #b1aeae !important;
     border-radius:20px !important;
     
 }
@@ -38,11 +47,11 @@ nav li {
     background-color: white;
     margin:10px 0;
     padding:0 !important;
-    border-radius:20px;
+    border-radius:10px;
 }
 .card-footer{
-    border-bottom-left-radius:20px !important;
-    border-bottom-right-radius:20px !important;
+    border-bottom-left-radius:10px !important;
+    border-bottom-right-radius:10px !important;
     background-color:black !important;
 }
 .card h5, .card p {
@@ -51,6 +60,15 @@ nav li {
 .card-footer a{
     color:white;
 }
+
+footer {
+    background-color:#383839;
+    height:75px;
+   
+}
+
+
+
 
 
       @media screen and (max-width:800px){
