@@ -2,6 +2,9 @@
 h5, .card a{
     font-family:"Varela Round" !important;
 }
+p, h5{
+    margin-bottom:0 !important;
+}
     .partition_1{
         background-color: #ff6543;
         height: 10px;
@@ -15,15 +18,14 @@ h5, .card a{
           letter-spacing: .5px;
           /* height:100px; */
       }
-      nav a{
-          color:black;
+nav a{
+ color:black;
       }
-  
-      header ul {
-          width:100%;
+header ul {
+width:100%;
       }
-      .tab-content{
-          background-color: #b1aeae;
+.tab-content{
+background-color: #b1aeae;
 padding:10px;
 border:10px solid white;
 max-height:75vh;
@@ -77,7 +79,7 @@ footer a{
 padding:10px;
 }
 #options{
-transition:transform 3s;
+transition:transform 2s;
 
 }
 #options li{
@@ -89,13 +91,14 @@ transition:transform 3s;
 }
 .in{
    transform:translateX(400px);
-    transition:transform 3s;
+    transition:transform 2s;
   
 }
 .fade{
 opacity:0;
 transition:opacity 1s;
 }
+
 
 
       @media screen and (max-width:800px){
@@ -108,3 +111,35 @@ transition:opacity 1s;
 }
 
       }
+
+      /* POST TEMPLATE */
+
+    
+      #message{
+        background-color: #b0d6ec;
+        padding:10px;
+        border:10px solid white;
+        height:75vh;
+        overflow:scroll;
+              }
+#message .card{
+border:none !important;
+margin:auto;
+}
+.partition_2{
+    background-color:white;
+    height: 6px;
+    width: 94%;
+    margin: 0px auto;
+    margin-bottom:10px;
+}
+h2{
+    color:white !important;
+    padding:10px;
+    
+}
+
+.reply .card-footer,#message .card-footer{
+text-align: right;
+padding:5px  20px!important;
+}
