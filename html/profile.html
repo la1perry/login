@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <title>Login Page</title>
+      <title>Profile Page</title>
       
       
       <link rel="stylesheet" type="text/css" href="../css/page-styles.css"/>
@@ -36,7 +36,7 @@
      
         <div class="partition_1"></div>
 
-<div class="container-fluid d-flex flex-row justify-content-center">
+<!-- <div class="container-fluid d-flex flex-row justify-content-center">
     <div class="page col-11 d-flex flex-row justify-content-center">
         
       <form class="col-5">
@@ -61,13 +61,144 @@
         </form>
        
         
-    </div>
+    </div> -->
 <!-- page -->
-</div>
+<!-- </div> -->
 
     <!-- container -->
 
-       
+    <div class="container-fluid">
+      <div class="row">
+          <div class="partition_1"></div>
+      <!-- TAB CONTENT -->
+      
+      <div class="tab-content col-12">
+      
+      
+      
+      
+      <div class="container-fluid pane">
+      
+        <div class="container-fluid d-flex flex-column flex-md-row flex-wrap">
+        
+          <!-- CARD first one empty, click to add post -->
+        <div class="card col-lg-4 col-md-6 col-sm-12 d-flex flex-row justify-content-center align-items-center" data-toggle="modal" data-target="#edit">
+      <div class="round d-flex flex-row justify-content-center align-items-center"><h3>Edit</h3></div>
+      </div>
+      <!-- end card -->
+      
+      
+      <!-- NEW POST MODAL -->
+      
+      <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Edit</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+            <div class="modal-body">
+              <!-- input -->
+              <form>
+                  <div class="form-group row">
+                      <label for="schoolpost_title">New Password:</label>
+                      <input class="form-control" type="password" id="new_password" placeholder="Enter New Password" aria-describedby="password">
+                      
+                    </div>
+                    <div class="form-group row">
+                        <div class="container-fluid d-flex flex-row justify-content-end no-wrap">
+                            
+                                <a class="col-3 btn btn-secondary" data-dismiss="modal">Cancel</a>
+                                <a class="col-3 btn btn-primary" href="#">Save</a>
+                              
+                          </div>
+                    </div>
+                          
+              </form>
+             
+            </div>
+          
+            </div>
+             <!-- modal content -->
+          </div>
+          <!-- modal dialog -->
+          </div>
+          <!-- END new post modal -->
+      
+      
+      <div class="card col-lg-4 col-md-6 col-sm-12">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5>My Posts</h5>
+            <p>Example of a post. Brief summary goes here</p>
+            <div class="card-footer d-flex flex-row justify-content-between">
+                <div class="col-10"><a href="#"> Read Post</a> </div><div class="col-2"><a href="#"> <img class="t" src="../imgs/rubbish-bin.svg"></a></div>
+            </div>
+          </div>
+        </div>
+        <!-- end card -->
+      
+        <div class="card col-lg-4 col-md-6 col-sm-12">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5>Title</h5>
+              <p>Example of a post. Brief summary goes here</p>
+              <div class="card-footer d-flex flex-row justify-content-between">
+                <div class="col-10"><a href="#"> Read Post</a> </div><div class="col-2"><a href="#"> <img class="t" src="../imgs/rubbish-bin.svg"></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- end card -->
+          <div class="card col-lg-4 col-md-6 col-sm-12">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5>Title</h5>
+                <p>Example of a post. Brief summary goes here</p>
+                <div class="card-footer d-flex flex-row justify-content-between">
+                  <div class="col-10"><a href="#"> Read Post</a> </div><div class="col-2"><a href="#"> <img class="t" src="../imgs/rubbish-bin.svg"></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- end card -->
+            <div class="card col-lg-4 col-md-6 col-sm-12">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h5>Title</h5>
+                  <p>Example of a post. Brief summary goes here</p>
+                  <div class="card-footer d-flex flex-row justify-content-between">
+                    <div class="col-10"><a href="#"> Read Post</a> </div><div class="col-2"><a href="#"> <img class="t" src="../imgs/rubbish-bin.svg"></a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end card -->
+              <div class="card col-lg-4 col-md-6 col-sm-12">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <h5>Title</h5>
+                    <p>Example of a post. Brief summary goes here</p>
+                    <div class="card-footer d-flex flex-row justify-content-between">
+                      <div class="col-10"><a href="#"> Read Post</a> </div><div class="col-2"><a href="#"> <img class="t" src="../imgs/rubbish-bin.svg"></a></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                
+        </div>
+        <!-- end flex container -->
+      
+      </div>
+      <!-- end social tab -->
+      
+      
+      
+      
+      </div>
+      <!-- end tab content -->
+      </div>
+      <!-- end row -->
+      
+      </div>
+      <!-- end container -->
+      
+      
                 <footer class="col-12 align-self-end">
                         <nav class="d-flex flex-row justify-content-end">
                           <ul id="options" class="nav d-flex flex-row">

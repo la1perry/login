@@ -113,6 +113,7 @@ header a:hover{
     text-decoration: none !important;
    
 }
+
 #landing{
     border:none !important;
     width:100%;
@@ -224,6 +225,41 @@ padding:5px  20px!important;
 
 
 
+/* Profile Page*/
+
+.card h3{
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+ 
+}
+.h3:hover{
+    cursor: pointer;
+}
+
+.round{
+    border:8px solid white;
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+}
+.t{
+    width:100%;
+    height:auto;
+    filter:invert(100%);
+}
+
+.by{
+    border-bottom:2px solid black;
+}
+.tr{
+    width:80%;
+    height:auto;
+    filter:invert(100%);
+}
+h6{
+    margin:.5rem !important;
+}
 
 @media screen and (max-width:800px){
     #pic{
